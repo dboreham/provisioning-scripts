@@ -31,7 +31,7 @@ if ! grep -q "deny-ssh" /etc/ssh/sshd_config 2>/dev/null; then
     echo "WARNING: 'deny-ssh' not found in /etc/ssh/sshd_config"
     echo "Please add the following line to /etc/ssh/sshd_config:"
     echo "    DenyGroups deny-ssh"
-    echo "Then restart the SSH service with: sudo systemctl restart sshd"
+    echo "Then restart the SSH service with: sudo systemctl restart sshd (or ssh on newer Ubuntu)"
     echo ""
 fi
 
